@@ -121,16 +121,11 @@
 
       <div>
         <form class="navbar-form navbar-right" role="search">
-            <button ng-click="Login()" type="submit" class="btn btn-default glyphicon glyphicon-remove ">
+          <input type="password" ng-model="Admincodes" placeholder="管理员验证" >
+            <button ng-click="FM.verification(Admincodes)" type="button" class="btn btn-default glyphicon glyphicon-remove ">
                 AdminLogin
             </button>
-            <script>
-              function Login() {
-                
-              alert("21111");
-              console.log(sessionStorage.getItem('username'));
-              }
-            </script>
+
         </form>
       </div>
     </div>
